@@ -17,3 +17,15 @@ def comments_list(request):
         {"postId": 1, "id": 1, "name": "id labore ex et quam laborum", "email": "Eliseo@gardner.biz", "body": "laudantium enim quasi..."},
     ]
     return JsonResponse(data, safe=False)
+
+def albums_list(request):
+    data = [{"userId": 1, "id": 1, "title": "quidem molestiae enim"}]
+    return JsonResponse(data, safe=False)
+
+def todos_list(request):
+    data = [{"userId": 1, "id": 1, "title": "delectus aut autem", "completed": False}]
+    return JsonResponse(data, safe=False)
+
+def users_list(request):
+    data = [{"id": 1, "name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz"}]
+    return JsonResponse(data, safe=False)
